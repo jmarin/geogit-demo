@@ -1,4 +1,4 @@
 geogit-demo
 ===========
 
-A demo of the GeoGit ecosystem
+A distributed versioning demo 
