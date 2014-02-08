@@ -16,9 +16,12 @@ libraryDependencies ++= Seq(
 lazy val geoGitServer =
   ProjectRef(uri("ssh://git@github.com/boundlessgeo/geogit-server.git"), "geogit-server")
 
-
-play.Project.playScalaSettings
-
 lazy val geogitDemo = project.in(file("."))
   .aggregate(geoGitServer)
   .dependsOn(geoGitServer)
+
+play.Project.playScalaSettings
+
+JavaScriptBuild.javaScriptUiSettings
+
+
