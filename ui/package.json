@@ -1,10 +1,16 @@
 {
-  "name": "play-grunt",
+  "name": "geogit-demo",
   "version": "0.1.0",
+	"description": "Geospatial Distributed Versioning Demo",
+	"scripts": {
+    "install": "bower install",
+    "start": "grunt start"
+  },
   "devDependencies": {
-    "grunt": "0.4.1",
+		"bower": "~1.2.8",			
+    "grunt": "0.4.2",
     "grunt-cli": "0.1.9",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-uglify": "~0.2.2"
-  }
+	}
 }

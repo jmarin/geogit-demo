@@ -1,0 +1,16 @@
+{
+  "name": "geogit-ui",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jmarin/geogit-demo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+ 	  "geogit-ui": "git+ssh://git@github.com/boundlessgeo/geogit-ui.git"
+  }
+}
