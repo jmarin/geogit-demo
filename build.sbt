@@ -9,7 +9,8 @@ scalariformSettings
 libraryDependencies ++= Seq(
   jdbc,
   anorm,
-  cache
+  cache,
+  filters
 )     
 
 lazy val geoGitServer =
