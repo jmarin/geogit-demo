@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
-    // Project configuration.
+  
+		// Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -17,10 +18,13 @@ module.exports = function(grunt) {
                 dest: '<%= target %>/<%= pkg.name %>.min.js'
             }
         },
-
-        watch: {
-            files: ['**/*.js'],
-            tasks: ['default']
+			
+				watch: {
+        	files: ['**/*.js', '**/*.html', '**/*.css'],
+          tasks: ['default'],
+					options: {
+					  livereload: true
+					}
         }
     });
 
@@ -31,6 +35,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['uglify',]);
 
 };
