@@ -13,7 +13,7 @@ object Application extends Controller {
   }
 
   def api(apiUrl: String) = Action.async {
-    WS.url("http://localhost/api/" + apiUrl)
+    WS.url("http://localhost:8080/api/" + apiUrl)
       .get()
       .map {
         response =>
