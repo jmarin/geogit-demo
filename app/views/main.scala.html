@@ -2,12 +2,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html ng-app="geogit-demo">
     <head>
         <title>@title</title>
     </head>
     <body>
         @content
-        <script src="@routes.Assets.at("play-grunt.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("js/angular/angular.min.js")" type="text/javascript"></script>
+				<script src="@routes.Assets.at("js/angular-resource/angular-resource.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("js/angular-route/angular-route.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("js/angular-touch/angular-touch.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("js/geogit-ui/geogit.min.js")" type="text/javascript"></script>
+
+        <script src="@routes.Assets.at("geogit-demo.min.js")" type="text/javascript"></script>
     </body>
 </html>
